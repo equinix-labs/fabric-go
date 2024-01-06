@@ -28,7 +28,7 @@ jobs:
       uses: actions/checkout@v2
       with:
         repository: equinix-product/interconnection_fabric-api-model
-        token: ${{ secrets.GITHUB_TOKEN
+        token: ${{ secrets.GITHUB_TOKEN }}
         path: fabric-api-model
     - name: Check Paths fomr Checkouts
       run: |
