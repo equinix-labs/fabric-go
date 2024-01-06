@@ -6,6 +6,7 @@ jobs:
       matrix:
         go-version: [1.20.x]
         os: [ubuntu-latest]
+        java-version: [11.0.20]
     runs-on: ${{ matrix.os }}
     steps:
     - name: Get current date
@@ -15,8 +16,24 @@ jobs:
       uses: actions/setup-go@v2
       with:
         go-version: ${{ matrix.go-version }}
-    - name: Checkout code
+    - name: Install Java
+      uses: actions/setup-java@v2
+      with:
+        java-version: ${{ matrix.java-version }}
+    - name: Checkout Go Code
       uses: actions/checkout@v2
+      with:
+        path: fabric-go
+    - name: Checkout Fabric API Model Private
+      uses: actions/checkout@v2
+      with:
+        repository: equinix-product/interconnection_fabric-api-model
+        token: ${{ secrets.GITHUB_TOKEN
+        path: fabric-api-model
+    - name: Check Paths fomr Checkouts
+      run: |
+        ls -lrt ./fabric-go
+        ls -lrt ./fabric-api-model
     - name: GitHub user
       run: |
         # https://api.github.com/users/github-actions[bot]
