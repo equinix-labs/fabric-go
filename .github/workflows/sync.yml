@@ -30,9 +30,9 @@ jobs:
       uses: actions/checkout@v2
       with:
         repository: equinix-product/interconnection_fabric-api-model
-        token: ${{ secrets.GITHUB_TOKEN }}
+        ssh-key: ${{ secrets.FABRIC_API_MODEL_DEPLOY_KEY }}
         path: fabric-api-model
-    - name: Check Paths fomr Checkouts
+    - name: Check Paths from Checkouts
       run: |
         ls -lrt ./fabric-go
         ls -lrt ./fabric-api-model
