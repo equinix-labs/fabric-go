@@ -8,11 +8,7 @@
  */
 package v4
 
-// Route Filter change operation data
-type RouteFiltersChangeOperation struct {
-	// Handy shortcut for operation name
-	Op string `json:"op"`
-	// path inside document leading to updated parameter
-	Path  string            `json:"path"`
-	Value *RouteFiltersBase `json:"value"`
+// Validate subnet for Routing Protocol Configuration
+type ValidateSubnetRequest struct {
+	Filter *ValidateSubnetRequestFilter `json:"filter,omitempty"`
 }
