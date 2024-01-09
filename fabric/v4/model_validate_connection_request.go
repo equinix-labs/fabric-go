@@ -8,8 +8,7 @@
  */
 package v4
 
-type GetRouteFilterRulesResponse struct {
-	Pagination *Pagination `json:"pagination,omitempty"`
-	// List of Route Filter Rules
-	Data []RouteFilterRulesData `json:"data,omitempty"`
+// Validate connection auth api key or vlan
+type ValidateConnectionRequest struct {
+	Filter *ValidateSubnetRequestFilter `json:"filter,omitempty"`
 }
