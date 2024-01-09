@@ -1,4 +1,8 @@
-on: ["workflow_dispatch"]
+on:
+  workflow_dispatch:
+    inputs:
+      spec_file:
+        type: string
 name: Sync
 jobs:
   sync:
@@ -24,18 +28,9 @@ jobs:
         distribution: ${{ matrix.java-distribution }}
     - name: Checkout Go Code
       uses: actions/checkout@v2
-      with:
-        path: fabric-go
-    - name: Checkout Fabric API Model Private
-      uses: actions/checkout@v2
-      with:
-        repository: equinix-product/interconnection_fabric-api-model
-        ssh-key: ${{ secrets.FABRIC_API_MODEL_DEPLOY_KEY }}
-        path: fabric-api-model
-    - name: Check Paths from Checkouts
+    - name: Print spec_file input
       run: |
-        ls -lrt ./fabric-go
-        ls -lrt ./fabric-api-model
+        echo ${{ inputs.spec_file }}
     - name: GitHub user
       run: |
         # https://api.github.com/users/github-actions[bot]
