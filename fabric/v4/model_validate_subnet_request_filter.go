@@ -8,8 +8,7 @@
  */
 package v4
 
-type GetAllConnectionRouteFiltersResponse struct {
-	Pagination *Pagination `json:"pagination,omitempty"`
-	// List of Route Filters attached to a Connection
-	Data []ConnectionRouteFilterData `json:"data,omitempty"`
+// Filters
+type ValidateSubnetRequestFilter struct {
+	And []ValidateSubnetRequestFilterAnd `json:"and,omitempty"`
 }
