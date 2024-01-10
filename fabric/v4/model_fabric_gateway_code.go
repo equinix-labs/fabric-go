@@ -8,17 +8,13 @@
  */
 package v4
 
-// AccessPointType : Access point type
-type AccessPointType string
+// FabricGatewayCode : Cloud Router code
+type FabricGatewayCode string
 
-// List of AccessPointType
+// List of FabricGatewayCode
 const (
-	VD_AccessPointType           AccessPointType = "VD"
-	VG_AccessPointType           AccessPointType = "VG"
-	SP_AccessPointType           AccessPointType = "SP"
-	IGW_AccessPointType          AccessPointType = "IGW"
-	COLO_AccessPointType         AccessPointType = "COLO"
-	SUBNET_AccessPointType       AccessPointType = "SUBNET"
-	CLOUD_ROUTER_AccessPointType AccessPointType = "CLOUD_ROUTER"
-	NETWORK_AccessPointType      AccessPointType = "NETWORK"
+	LAB_FabricGatewayCode     FabricGatewayCode = "LAB"
+	BASIC_FabricGatewayCode   FabricGatewayCode = "BASIC"
+	PRO_FabricGatewayCode     FabricGatewayCode = "PRO"
+	PREMIUM_FabricGatewayCode FabricGatewayCode = "PREMIUM"
 )

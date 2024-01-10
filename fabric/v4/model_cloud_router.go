@@ -32,11 +32,7 @@ type CloudRouter struct {
 	// Access point used and maximum number of IPv6 BGP routes
 	BgpIpv6RoutesCount int32 `json:"bgpIpv6RoutesCount,omitempty"`
 	// Number of connections associated with this Access point
-	ConnectionsCount int32 `json:"connectionsCount,omitempty"`
-	// Number of distinct ipv4 routes
-	DistinctIpv4PrefixesCount int32 `json:"distinctIpv4PrefixesCount,omitempty"`
-	// Number of distinct ipv6 routes
-	DistinctIpv6PrefixesCount int32              `json:"distinctIpv6PrefixesCount,omitempty"`
-	ChangeLog                 *Changelog         `json:"changeLog,omitempty"`
-	Change                    *CloudRouterChange `json:"change,omitempty"`
+	ConnectionsCount int32              `json:"connectionsCount,omitempty"`
+	ChangeLog        *Changelog         `json:"changeLog,omitempty"`
+	Change           *CloudRouterChange `json:"change,omitempty"`
 }

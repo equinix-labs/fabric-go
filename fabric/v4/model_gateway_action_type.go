@@ -8,17 +8,11 @@
  */
 package v4
 
-// AccessPointType : Access point type
-type AccessPointType string
+// GatewayActionType : Cloud Router action type
+type GatewayActionType string
 
-// List of AccessPointType
+// List of GatewayActionType
 const (
-	VD_AccessPointType           AccessPointType = "VD"
-	VG_AccessPointType           AccessPointType = "VG"
-	SP_AccessPointType           AccessPointType = "SP"
-	IGW_AccessPointType          AccessPointType = "IGW"
-	COLO_AccessPointType         AccessPointType = "COLO"
-	SUBNET_AccessPointType       AccessPointType = "SUBNET"
-	CLOUD_ROUTER_AccessPointType AccessPointType = "CLOUD_ROUTER"
-	NETWORK_AccessPointType      AccessPointType = "NETWORK"
+	BGP_SESSION_STATUS_UPDATE_GatewayActionType GatewayActionType = "BGP_SESSION_STATUS_UPDATE"
+	ROUTE_TABLE_ENTRY_UPDATE_GatewayActionType  GatewayActionType = "ROUTE_TABLE_ENTRY_UPDATE"
 )

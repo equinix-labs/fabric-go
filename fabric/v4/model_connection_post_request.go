@@ -18,7 +18,6 @@ type ConnectionPostRequest struct {
 	Notifications []SimplifiedNotification `json:"notifications,omitempty"`
 	// Connection bandwidth in Mbps
 	Bandwidth  int32                 `json:"bandwidth,omitempty"`
-	GeoScope   *GeoScopeType         `json:"geoScope,omitempty"`
 	Redundancy *ConnectionRedundancy `json:"redundancy,omitempty"`
 	ASide      *ConnectionSide       `json:"aSide,omitempty"`
 	ZSide      *ConnectionSide       `json:"zSide,omitempty"`

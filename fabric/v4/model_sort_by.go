@@ -31,7 +31,6 @@ const (
 	Z_SIDEACCESS_POINTLINK_PROTOCOLVLAN_S_TAG_SortBy SortBy = "/zSide/accessPoint/linkProtocol/vlanSTag"
 	Z_SIDEACCESS_POINTAUTHENTICATION_KEY_SortBy      SortBy = "/zSide/accessPoint/authenticationKey"
 	BANDWIDTH_SortBy                                 SortBy = "/bandwidth"
-	GEO_SCOPE_SortBy                                 SortBy = "/geoScope"
 	UUID_SortBy                                      SortBy = "/uuid"
 	CHANGE_LOGCREATED_DATE_TIME_SortBy               SortBy = "/changeLog/createdDateTime"
 	CHANGE_LOGUPDATED_DATE_TIME_SortBy               SortBy = "/changeLog/updatedDateTime"

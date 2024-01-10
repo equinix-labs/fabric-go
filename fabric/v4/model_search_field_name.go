@@ -17,7 +17,6 @@ const (
 	NAME_SearchFieldName                                        SearchFieldName = "/name"
 	UUID_SearchFieldName                                        SearchFieldName = "/uuid"
 	TYPE__SearchFieldName                                       SearchFieldName = "/type"
-	GEO_SCOPE_SearchFieldName                                   SearchFieldName = "/geoScope"
 	ACCOUNTORG_ID_SearchFieldName                               SearchFieldName = "/account/orgId"
 	A_SIDEACCESS_POINTACCOUNTACCOUNT_NAME_SearchFieldName       SearchFieldName = "/aSide/accessPoint/account/accountName"
 	A_SIDEACCESS_POINTACCOUNTACCOUNT_NUMBER_SearchFieldName     SearchFieldName = "/aSide/accessPoint/account/accountNumber"

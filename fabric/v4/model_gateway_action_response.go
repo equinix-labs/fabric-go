@@ -8,17 +8,11 @@
  */
 package v4
 
-// AccessPointType : Access point type
-type AccessPointType string
-
-// List of AccessPointType
-const (
-	VD_AccessPointType           AccessPointType = "VD"
-	VG_AccessPointType           AccessPointType = "VG"
-	SP_AccessPointType           AccessPointType = "SP"
-	IGW_AccessPointType          AccessPointType = "IGW"
-	COLO_AccessPointType         AccessPointType = "COLO"
-	SUBNET_AccessPointType       AccessPointType = "SUBNET"
-	CLOUD_ROUTER_AccessPointType AccessPointType = "CLOUD_ROUTER"
-	NETWORK_AccessPointType      AccessPointType = "NETWORK"
-)
+// Cloud Router actions response object
+type GatewayActionResponse struct {
+	Type_       *GatewayActionType  `json:"type"`
+	Uuid        string              `json:"uuid"`
+	Description string              `json:"description,omitempty"`
+	State       *GatewayActionState `json:"state"`
+	ChangeLog   *Changelog          `json:"changeLog"`
+}

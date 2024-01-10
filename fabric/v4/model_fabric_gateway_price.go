@@ -8,17 +8,10 @@
  */
 package v4
 
-// AccessPointType : Access point type
-type AccessPointType string
-
-// List of AccessPointType
-const (
-	VD_AccessPointType           AccessPointType = "VD"
-	VG_AccessPointType           AccessPointType = "VG"
-	SP_AccessPointType           AccessPointType = "SP"
-	IGW_AccessPointType          AccessPointType = "IGW"
-	COLO_AccessPointType         AccessPointType = "COLO"
-	SUBNET_AccessPointType       AccessPointType = "SUBNET"
-	CLOUD_ROUTER_AccessPointType AccessPointType = "CLOUD_ROUTER"
-	NETWORK_AccessPointType      AccessPointType = "NETWORK"
-)
+// Cloud Router  Product configuration
+type FabricGatewayPrice struct {
+	// Unique identifier assigned to the Cloud Router
+	Uuid     string                 `json:"uuid,omitempty"`
+	Location *PriceLocation         `json:"location,omitempty"`
+	Package_ *FabricGatewayPackages `json:"package,omitempty"`
+}

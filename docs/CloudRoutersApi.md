@@ -4,19 +4,18 @@ All URIs are relative to *https://api.equinix.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**CreateCloudRouter**](CloudRoutersApi.md#CreateCloudRouter) | **Post** /fabric/v4/routers | Create Routers
-[**CreateCloudRouterAction**](CloudRoutersApi.md#CreateCloudRouterAction) | **Post** /fabric/v4/routers/{routerId}/actions | Route table actions
-[**DeleteCloudRouterByUuid**](CloudRoutersApi.md#DeleteCloudRouterByUuid) | **Delete** /fabric/v4/routers/{routerId} | Delete Routers
-[**GetCloudRouterActions**](CloudRoutersApi.md#GetCloudRouterActions) | **Get** /fabric/v4/routers/{routerId}/actions | Get actions
-[**GetCloudRouterByUuid**](CloudRoutersApi.md#GetCloudRouterByUuid) | **Get** /fabric/v4/routers/{routerId} | Get Routers
-[**GetCloudRouterPackageByCode**](CloudRoutersApi.md#GetCloudRouterPackageByCode) | **Get** /fabric/v4/routerPackages/{routerPackageCode} | Get Package Details
-[**GetCloudRouterPackages**](CloudRoutersApi.md#GetCloudRouterPackages) | **Get** /fabric/v4/routerPackages | List Packages
-[**SearchCloudRouterRoutes**](CloudRoutersApi.md#SearchCloudRouterRoutes) | **Post** /fabric/v4/routers/{routerId}/routes/search | Search Route Table
-[**SearchCloudRouters**](CloudRoutersApi.md#SearchCloudRouters) | **Post** /fabric/v4/routers/search | Search Routers
-[**UpdateCloudRouterByUuid**](CloudRoutersApi.md#UpdateCloudRouterByUuid) | **Patch** /fabric/v4/routers/{routerId} | Update Routers
+[**CreateGateway**](CloudRoutersApi.md#CreateGateway) | **Post** /fabric/v4/routers | Create Routers
+[**CreateGatewayAction**](CloudRoutersApi.md#CreateGatewayAction) | **Post** /fabric/v4/routers/{routerId}/actions | Route table actions
+[**DeleteGatewayByUuid**](CloudRoutersApi.md#DeleteGatewayByUuid) | **Delete** /fabric/v4/routers/{routerId} | Delete Routers
+[**GetGatewayActions**](CloudRoutersApi.md#GetGatewayActions) | **Get** /fabric/v4/routers/{routerId}/actions | Get actions
+[**GetGatewayByUuid**](CloudRoutersApi.md#GetGatewayByUuid) | **Get** /fabric/v4/routers/{routerId} | Get Routers
+[**GetGatewayPackageByCode**](CloudRoutersApi.md#GetGatewayPackageByCode) | **Get** /fabric/v4/routerPackages/{routerPackageCode} | Get Package Details
+[**GetGatewayPackages**](CloudRoutersApi.md#GetGatewayPackages) | **Get** /fabric/v4/routerPackages | List Packages
+[**SearchGateways**](CloudRoutersApi.md#SearchGateways) | **Post** /fabric/v4/routers/search | Search Routers
+[**UpdateGatewayByUuid**](CloudRoutersApi.md#UpdateGatewayByUuid) | **Patch** /fabric/v4/routers/{routerId} | Update Routers
 
-# **CreateCloudRouter**
-> CloudRouter CreateCloudRouter(ctx, body)
+# **CreateGateway**
+> CloudRouter CreateGateway(ctx, body)
 Create Routers
 
 This API provides capability to create user's Cloud Routers
@@ -43,8 +42,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **CreateCloudRouterAction**
-> CloudRouterActionResponse CreateCloudRouterAction(ctx, body, routerId)
+# **CreateGatewayAction**
+> GatewayActionResponse CreateGatewayAction(ctx, body, routerId)
 Route table actions
 
 This API provides capability to refresh route table and bgp session summary information
@@ -54,12 +53,12 @@ This API provides capability to refresh route table and bgp session summary info
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **body** | [**CloudRouterActionRequest**](CloudRouterActionRequest.md)|  | 
+  **body** | [**GatewayActionRequest**](GatewayActionRequest.md)|  | 
   **routerId** | [**string**](.md)| Router UUID | 
 
 ### Return type
 
-[**CloudRouterActionResponse**](CloudRouterActionResponse.md)
+[**GatewayActionResponse**](GatewayActionResponse.md)
 
 ### Authorization
 
@@ -72,8 +71,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **DeleteCloudRouterByUuid**
-> DeleteCloudRouterByUuid(ctx, routerId)
+# **DeleteGatewayByUuid**
+> DeleteGatewayByUuid(ctx, routerId)
 Delete Routers
 
 This API provides capability to delete user's Cloud Routers
@@ -100,8 +99,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **GetCloudRouterActions**
-> CloudRouterActionResponse GetCloudRouterActions(ctx, routerId, optional)
+# **GetGatewayActions**
+> GatewayActionResponse GetGatewayActions(ctx, routerId, optional)
 Get actions
 
 This API provides capability to fetch action status
@@ -112,18 +111,18 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
   **routerId** | [**string**](.md)| Router UUID | 
- **optional** | ***CloudRoutersApiGetCloudRouterActionsOpts** | optional parameters | nil if no parameters
+ **optional** | ***CloudRoutersApiGetGatewayActionsOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a CloudRoutersApiGetCloudRouterActionsOpts struct
+Optional parameters are passed through a pointer to a CloudRoutersApiGetGatewayActionsOpts struct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
 
- **state** | [**optional.Interface of CloudRouterActionState**](.md)| Action state | 
+ **state** | [**optional.Interface of GatewayActionState**](.md)| Action state | 
 
 ### Return type
 
-[**CloudRouterActionResponse**](CloudRouterActionResponse.md)
+[**GatewayActionResponse**](GatewayActionResponse.md)
 
 ### Authorization
 
@@ -136,8 +135,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **GetCloudRouterByUuid**
-> CloudRouter GetCloudRouterByUuid(ctx, routerId)
+# **GetGatewayByUuid**
+> CloudRouter GetGatewayByUuid(ctx, routerId)
 Get Routers
 
 This API provides capability to retrieve user's Cloud Routers
@@ -164,8 +163,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **GetCloudRouterPackageByCode**
-> CloudRouterPackage GetCloudRouterPackageByCode(ctx, routerPackageCode)
+# **GetGatewayPackageByCode**
+> CloudRouterPackage GetGatewayPackageByCode(ctx, routerPackageCode)
 Get Package Details
 
 This API provides capability to retrieve user's Cloud Routers Package Details
@@ -192,8 +191,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **GetCloudRouterPackages**
-> PackageResponse GetCloudRouterPackages(ctx, optional)
+# **GetGatewayPackages**
+> PackageResponse GetGatewayPackages(ctx, optional)
 List Packages
 
 This API provides capability to retrieve user's Cloud Routers Packages
@@ -203,10 +202,10 @@ This API provides capability to retrieve user's Cloud Routers Packages
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
- **optional** | ***CloudRoutersApiGetCloudRouterPackagesOpts** | optional parameters | nil if no parameters
+ **optional** | ***CloudRoutersApiGetGatewayPackagesOpts** | optional parameters | nil if no parameters
 
 ### Optional Parameters
-Optional parameters are passed through a pointer to a CloudRoutersApiGetCloudRouterPackagesOpts struct
+Optional parameters are passed through a pointer to a CloudRoutersApiGetGatewayPackagesOpts struct
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **offset** | **optional.Int32**| offset | 
@@ -227,37 +226,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **SearchCloudRouterRoutes**
-> RouteTableEntrySearchResponse SearchCloudRouterRoutes(ctx, body, routerId)
-Search Route Table
-
-The API provides capability to get list of user's Fabric Cloud Router route table entries using search criteria, including optional filtering, pagination and sorting
-
-### Required Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **ctx** | **context.Context** | context for authentication, logging, cancellation, deadlines, tracing, etc.
-  **body** | [**RouteTableEntrySearchRequest**](RouteTableEntrySearchRequest.md)|  | 
-  **routerId** | [**string**](.md)| Router UUID | 
-
-### Return type
-
-[**RouteTableEntrySearchResponse**](RouteTableEntrySearchResponse.md)
-
-### Authorization
-
-[BearerAuth](../README.md#BearerAuth)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **SearchCloudRouters**
-> SearchResponse SearchCloudRouters(ctx, body)
+# **SearchGateways**
+> SearchResponse SearchGateways(ctx, body)
 Search Routers
 
 The API provides capability to get list of user's Cloud Routers using search criteria, including optional filtering, pagination and sorting
@@ -284,8 +254,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **UpdateCloudRouterByUuid**
-> CloudRouter UpdateCloudRouterByUuid(ctx, body, routerId)
+# **UpdateGatewayByUuid**
+> CloudRouter UpdateGatewayByUuid(ctx, body, routerId)
 Update Routers
 
 This API provides capability to update user's Cloud Routers

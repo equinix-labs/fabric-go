@@ -29,7 +29,6 @@ type Connection struct {
 	ChangeLog     *Changelog               `json:"changeLog,omitempty"`
 	// Connection bandwidth in Mbps
 	Bandwidth  int32                 `json:"bandwidth"`
-	GeoScope   *GeoScopeType         `json:"geoScope,omitempty"`
 	Redundancy *ConnectionRedundancy `json:"redundancy,omitempty"`
 	// Connection property derived from access point locations
 	IsRemote  bool                 `json:"isRemote,omitempty"`

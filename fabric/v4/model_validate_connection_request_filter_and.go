@@ -8,17 +8,11 @@
  */
 package v4
 
-// AccessPointType : Access point type
-type AccessPointType string
-
-// List of AccessPointType
-const (
-	VD_AccessPointType           AccessPointType = "VD"
-	VG_AccessPointType           AccessPointType = "VG"
-	SP_AccessPointType           AccessPointType = "SP"
-	IGW_AccessPointType          AccessPointType = "IGW"
-	COLO_AccessPointType         AccessPointType = "COLO"
-	SUBNET_AccessPointType       AccessPointType = "SUBNET"
-	CLOUD_ROUTER_AccessPointType AccessPointType = "CLOUD_ROUTER"
-	NETWORK_AccessPointType      AccessPointType = "NETWORK"
-)
+type ValidateConnectionRequestFilterAnd struct {
+	// Path to property
+	Property string `json:"property,omitempty"`
+	// Type of operation
+	Operator string `json:"operator,omitempty"`
+	// Values for the given property
+	Values []string `json:"values,omitempty"`
+}

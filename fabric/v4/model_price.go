@@ -27,6 +27,6 @@ type Price struct {
 	Catgory    *PriceCategory          `json:"catgory,omitempty"`
 	Connection *VirtualConnectionPrice `json:"connection,omitempty"`
 	IpBlock    *IpBlockPrice           `json:"ipBlock,omitempty"`
-	Router     *FabricCloudRouterPrice `json:"router,omitempty"`
+	Router     *FabricGatewayPrice     `json:"router,omitempty"`
 	Port       *VirtualPortPrice       `json:"port,omitempty"`
 }

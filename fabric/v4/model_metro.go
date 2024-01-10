@@ -26,6 +26,4 @@ type Metro struct {
 	LocalVCBandwidthMax int64            `json:"localVCBandwidthMax,omitempty"`
 	GeoCoordinates      *GeoCoordinates  `json:"geoCoordinates,omitempty"`
 	ConnectedMetros     []ConnectedMetro `json:"connectedMetros,omitempty"`
-	// List of supported geographic boundaries of a Fabric Metro.
-	GeoScopes []GeoScopeType `json:"geoScopes,omitempty"`
 }

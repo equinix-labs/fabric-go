@@ -8,17 +8,12 @@
  */
 package v4
 
-// AccessPointType : Access point type
-type AccessPointType string
+// GatewayActionState : Cloud Router action state
+type GatewayActionState string
 
-// List of AccessPointType
+// List of GatewayActionState
 const (
-	VD_AccessPointType           AccessPointType = "VD"
-	VG_AccessPointType           AccessPointType = "VG"
-	SP_AccessPointType           AccessPointType = "SP"
-	IGW_AccessPointType          AccessPointType = "IGW"
-	COLO_AccessPointType         AccessPointType = "COLO"
-	SUBNET_AccessPointType       AccessPointType = "SUBNET"
-	CLOUD_ROUTER_AccessPointType AccessPointType = "CLOUD_ROUTER"
-	NETWORK_AccessPointType      AccessPointType = "NETWORK"
+	DONE_GatewayActionState    GatewayActionState = "DONE"
+	FAILED_GatewayActionState  GatewayActionState = "FAILED"
+	PENDING_GatewayActionState GatewayActionState = "PENDING"
 )

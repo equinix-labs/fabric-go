@@ -13,7 +13,5 @@ type PortSearchFieldName string
 
 // List of PortSearchFieldName
 const (
-	PROJECTPROJECT_ID_PortSearchFieldName    PortSearchFieldName = "/project/projectId"
-	SETTINGSPRODUCT_CODE_PortSearchFieldName PortSearchFieldName = "/settings/productCode"
-	STATE_PortSearchFieldName                PortSearchFieldName = "/state"
+	PROJECTPROJECT_ID_PortSearchFieldName PortSearchFieldName = "/project/projectId"
 )

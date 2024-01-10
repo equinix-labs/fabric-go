@@ -36,7 +36,7 @@ var (
 	xmlCheck  = regexp.MustCompile("(?i:[application|text]/xml)")
 )
 
-// APIClient manages communication with the Equinix Fabric API v4 API v4.11
+// APIClient manages communication with the Equinix Fabric API v4 API v4.9
 // In most cases there should be only one, shared, APIClient.
 type APIClient struct {
 	cfg    *Configuration
@@ -56,13 +56,9 @@ type APIClient struct {
 
 	PortsApi *PortsApiService
 
-	PrecisionTimeApi *PrecisionTimeApiService
-
 	PricesApi *PricesApiService
 
-	RouteFilterRulesApi *RouteFilterRulesApiService
-
-	RouteFiltersApi *RouteFiltersApiService
+	RoutesApi *RoutesApiService
 
 	RoutingProtocolsApi *RoutingProtocolsApiService
 
@@ -95,10 +91,8 @@ func NewAPIClient(cfg *Configuration) *APIClient {
 	c.MetrosApi = (*MetrosApiService)(&c.common)
 	c.NetworksApi = (*NetworksApiService)(&c.common)
 	c.PortsApi = (*PortsApiService)(&c.common)
-	c.PrecisionTimeApi = (*PrecisionTimeApiService)(&c.common)
 	c.PricesApi = (*PricesApiService)(&c.common)
-	c.RouteFilterRulesApi = (*RouteFilterRulesApiService)(&c.common)
-	c.RouteFiltersApi = (*RouteFiltersApiService)(&c.common)
+	c.RoutesApi = (*RoutesApiService)(&c.common)
 	c.RoutingProtocolsApi = (*RoutingProtocolsApiService)(&c.common)
 	c.ServiceProfilesApi = (*ServiceProfilesApiService)(&c.common)
 	c.ServiceTokensApi = (*ServiceTokensApiService)(&c.common)
