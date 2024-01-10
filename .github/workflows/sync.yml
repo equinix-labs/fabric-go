@@ -1,5 +1,9 @@
-on: [workflow_dispatch]
-name: Sync SDK with New API Spec
+on:
+  workflow_dispatch:
+    inputs:
+      new_api_spec_version_number:
+        required: true
+name: Sync # SDK with New API Spec
 jobs:
   sync:
     strategy:
@@ -23,11 +27,8 @@ jobs:
       run: |
         API_SPEC_LINE=$(grep -i api.swaggerhub.com Makefile)
         CURRENT_VERSION_NUM=$(echo $API_SPEC_LINE | cut -d / -f7)
-        VERSION_NUMS=($(echo "$CURRENT_VERSION_NUM" | tr . '\n'))
-        VERSION_NUMS[1]=$((VERSION_NUMS[1]+1))
         echo "api_spec_line=$API_SPEC_LINE" >> "$GITHUB_OUTPUT"
         echo "cur_version=$CURRENT_VERSION_NUM" >> "$GITHUB_OUTPUT"
-        echo "next_version=$(echo $(IFS=. ; echo "${VERSION_NUMS[*]}"))" >> "$GITHUB_OUTPUT"
     - name: GitHub user
       run: |
         # https://api.github.com/users/github-actions[bot]
@@ -35,8 +36,8 @@ jobs:
         git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
     - name: Sync
       run: |
-        VERSION_UPDATE="SPEC_URL:=\"https://api.swaggerhub.com/apis/equinix-api/fabric/${{ steps.spec_versions.outputs.next_version }}/swagger.yaml\""
-        sed -i 's,${{ steps.spec_versions.outputs.api_spec_line }},'"$VERSION_UPDATE"',' Makefile
+        VERSION_UPDATE="SPEC_URL:=\"https://api.swaggerhub.com/apis/equinix-api/fabric/${{ github.event.inputs.new_api_spec_version_number }}/swagger.yaml\""
+        sed -i 's,${{ steps.spec_versions.outputs.api_spec_line }},${{ github.event.inputs.new_api_spec_version_number }},' Makefile
         make # pull fetch patch gen mod test
         git commit -m 'sync: fetch ${{ steps.date.outputs.date }} spec and apply patches' *.yaml
         git commit -m 'sync: generate client with ${{ steps.date.outputs.date }} spec' fabric api docs README.md
@@ -46,15 +47,15 @@ jobs:
       with:
         branch: sync/gh
         branch-suffix: timestamp
-        title: Version ${{ steps.spec_versions.outputs.cur_version }} to ${{ steps.spec_versions.outputs.next_version }} API Spec Sync by GitHub Action (${{ steps.date.outputs.date }})
+        title: Version ${{ steps.spec_versions.outputs.cur_version }} to ${{ github.event.inputs.new_api_spec_version_number }} API Spec Sync by GitHub Action (${{ steps.date.outputs.date }})
         body: |
           This API Sync PR was automated through GitHub Actions workflow_displatch
           on ${{ steps.date.outputs.date }}.
           
           This PR updates the SDK API Spec Version:
-          from ${{ steps.spec_versions.outputs.cur_version }} to ${{ steps.spec_versions.outputs.next_version }}
+          from ${{ steps.spec_versions.outputs.cur_version }} to ${{ github.event.inputs.new_api_spec_version_number }}
 
-          * Latest Swaggerhub API Spec is fetched - version ${{ steps.spec_versions.outputs.next_version }}
+          * Latest Swaggerhub API Spec is fetched - version ${{ github.event.inputs.new_api_spec_version_number }}
           * Patches have been applied
           * Generated client has been updated
           
