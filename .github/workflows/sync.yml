@@ -46,7 +46,7 @@ jobs:
       with:
         branch: sync/gh
         branch-suffix: timestamp
-        title: API Sync by GitHub Action (${{ steps.date.outputs.date }})
+        title: Version ${{ steps.spec_versions.outputs.cur_version }} to ${{ steps.spec_versions.outputs.next_version }} API Spec Sync by GitHub Action (${{ steps.date.outputs.date }})
         body: |
           This API Sync PR was automated through GitHub Actions workflow_displatch
           on ${{ steps.date.outputs.date }}.
@@ -62,11 +62,11 @@ jobs:
           
           ### Enhancements
           
-          - Add enhancements here -
+          -Add enhancements here-
           
           ### Breaking Changes
           
-          - Add breaking changes here -
+          -Add breaking changes here-
         delete-branch: true
     - name: Check outputs
       run: |
