@@ -36,7 +36,7 @@ jobs:
     - name: Sync
       run: |
         VERSION_UPDATE="SPEC_URL:=\"https://api.swaggerhub.com/apis/equinix-api/fabric/${{ steps.spec_versions.outputs.next_version }}/swagger.yaml\""
-        sed "s/${{ steps.spec_versions.outputs.api_spec_line }}/$VERSION_UPDATE/" Makefile
+        sed 's/${{ steps.spec_versions.outputs.api_spec_line }}/$VERSION_UPDATE/' Makefile
         make # pull fetch patch gen mod test
         git commit -m 'sync: fetch ${{ steps.date.outputs.date }} spec and apply patches' *.yaml
         git commit -m 'sync: generate client with ${{ steps.date.outputs.date }} spec' fabric api docs README.md
