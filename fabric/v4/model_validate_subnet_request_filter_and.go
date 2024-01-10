@@ -8,13 +8,11 @@
  */
 package v4
 
-type ConnectionRouteFilterData struct {
-	// Route Filter URI
-	Href string `json:"href,omitempty"`
-	// Route Filter type
-	Type_ string `json:"type,omitempty"`
-	// Route Filter identifier
-	Uuid             string `json:"uuid,omitempty"`
-	AttachmentStatus string `json:"attachmentStatus,omitempty"`
-	Direction        string `json:"direction,omitempty"`
+type ValidateSubnetRequestFilterAnd struct {
+	// Path to property
+	Property string `json:"property,omitempty"`
+	// Type of operation
+	Operator string `json:"operator,omitempty"`
+	// Values for the given property
+	Values []string `json:"values,omitempty"`
 }
