@@ -8,8 +8,9 @@
  */
 package v4
 
-// List of Route Filter changes
-type RouteFilterChangeDataResponse struct {
-	Pagination *Pagination             `json:"pagination,omitempty"`
-	Data       []RouteFilterChangeData `json:"data,omitempty"`
+// Precision Packages
+type PrecisionTimeServicePackagesResponse struct {
+	Pagination *Pagination `json:"pagination,omitempty"`
+	// Data returned from the API call
+	Data []PackageResponse `json:"data,omitempty"`
 }
