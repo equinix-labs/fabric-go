@@ -1,5 +1,5 @@
 on: [workflow_dispatch]
-name: Sync SDK with New API Spec
+name: Sync
 jobs:
   sync:
     strategy:
