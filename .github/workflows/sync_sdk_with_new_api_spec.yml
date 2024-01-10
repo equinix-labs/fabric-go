@@ -3,7 +3,7 @@ on:
     inputs:
       new_api_spec_version_number:
         required: true
-name: Sync # SDK with New API Spec
+name: Sync SDK with New API Spec
 jobs:
   sync:
     strategy:
