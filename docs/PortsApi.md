@@ -46,7 +46,7 @@ Name | Type | Description  | Notes
 > AllPortsResponse CreateBulkPort(ctx, body)
 Create Port
 
-Create Port creates Equinix Fabric™ Port.<font color=\"red\"> <sup color='red'>Preview</sup></font>
+Create Port creates Equinix Fabric? Port.<font color=\"red\"> <sup color='red'>Preview</sup></font>
 
 ### Required Parameters
 
@@ -74,7 +74,7 @@ Name | Type | Description  | Notes
 > Port CreatePort(ctx, body)
 Create Port
 
-Creates Equinix Fabric™ Port.
+Creates Equinix Fabric? Port.
 
 ### Required Parameters
 

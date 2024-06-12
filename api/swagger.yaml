@@ -7,7 +7,7 @@ info:
     \ Customers can use Fabric to connect to: </br> 1. Cloud Service Providers - Clouds,\
     \ network and other service providers.  </br> 2. Enterprises - Other Equinix customers,\
     \ vendors and partners.  </br> 3. Myself - Another customer instance deployed\
-    \ at Equinix. </br> </br> <b>Integrations (SDKs, Tools) links:</b></br> <a href=\"\
+    \ at Equinix. </br> </br> <b>Integrations (SDKs, Tools) links:</b> </br> <a href=\"\
     https://deploy.equinix.com/labs/fabric-java\\\">Fabric Java SDK</a> </br> <a href=\"\
     https://deploy.equinix.com/labs/equinix-sdk-go\\\">Fabric Go SDK</a> </br> <a\
     \ href=\"https://deploy.equinix.com/labs/terraform-provider-equinix\\\">Equinix\
@@ -415,6 +415,15 @@ paths:
               examples:
                 example:
                   $ref: '#/components/examples/400-delete'
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/401'
         "403":
           description: Forbidden
           content:
@@ -652,6 +661,24 @@ paths:
               examples:
                 example:
                   $ref: '#/components/examples/400'
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/401'
+        "403":
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/403'
         "404":
           description: Connection ID Not Found
           content:
@@ -721,6 +748,24 @@ paths:
               examples:
                 example:
                   $ref: '#/components/examples/400'
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/401'
+        "403":
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/403'
         "404":
           description: Connection ID Not Found
           content:
@@ -796,6 +841,24 @@ paths:
               examples:
                 example:
                   $ref: '#/components/examples/400_routing_protocol'
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/401'
+        "403":
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/403'
         "404":
           description: Connection ID Not Found
           content:
@@ -868,6 +931,24 @@ paths:
               examples:
                 example:
                   $ref: '#/components/examples/400'
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/401'
+        "403":
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/403'
         "404":
           description: Connection ID Not Found
           content:
@@ -951,6 +1032,24 @@ paths:
               examples:
                 example:
                   $ref: '#/components/examples/400'
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/401'
+        "403":
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/403'
         "404":
           description: Connection ID Not Found
           content:
@@ -1023,6 +1122,24 @@ paths:
               examples:
                 example:
                   $ref: '#/components/examples/400'
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/401'
+        "403":
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/403'
         "404":
           description: Connection ID Not Found
           content:
@@ -1110,6 +1227,24 @@ paths:
               examples:
                 example:
                   $ref: '#/components/examples/400'
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/401'
+        "403":
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/403'
         "404":
           description: Connection ID Not Found
           content:
@@ -1198,6 +1333,24 @@ paths:
               examples:
                 example:
                   $ref: '#/components/examples/400'
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/401'
+        "403":
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/403'
         "404":
           description: Connection ID Not Found
           content:
@@ -1297,6 +1450,24 @@ paths:
               examples:
                 example:
                   $ref: '#/components/examples/400'
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/401'
+        "403":
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/403'
         "404":
           description: Connection ID Not Found
           content:
@@ -1375,6 +1546,24 @@ paths:
               examples:
                 example:
                   $ref: '#/components/examples/400_Invalid_id'
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/401'
+        "403":
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/403'
         "404":
           description: Connection ID Not Found
           content:
@@ -1445,6 +1634,24 @@ paths:
               examples:
                 example:
                   $ref: '#/components/examples/400_Invalid_id'
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/401'
+        "403":
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/403'
         "404":
           description: Connection ID Not Found
           content:
@@ -1525,6 +1732,24 @@ paths:
               examples:
                 example:
                   $ref: '#/components/examples/400_Invalid_id'
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/401'
+        "403":
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/403'
         "404":
           description: Connection ID Not Found
           content:
@@ -1844,6 +2069,33 @@ paths:
               examples:
                 statsExample:
                   $ref: '#/components/examples/200_port'
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/401'
+        "403":
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/403'
+        "500":
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/500'
   /fabric/v4/ports/stats:
     get:
       tags:
@@ -1858,7 +2110,7 @@ paths:
         in: query
         description: Key or set of keys that organizes the search payload by property
           (such as createdDate or metroCode) or by direction. Ascending (ASC) is the
-          default value. The "‒" prefix indicates descending (DESC) order.
+          default value. The "?" prefix indicates descending (DESC) order.
         required: false
         style: form
         explode: true
@@ -1925,6 +2177,24 @@ paths:
               examples:
                 statsExample:
                   $ref: '#/components/examples/200_top'
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/401'
+        "403":
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/403'
   /fabric/v4/connections/{connectionId}/stats:
     get:
       tags:
@@ -1980,6 +2250,24 @@ paths:
               examples:
                 statsExample:
                   $ref: '#/components/examples/200_vc'
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/401'
+        "403":
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/403'
   /fabric/v4/serviceProfiles:
     get:
       tags:
@@ -2071,7 +2359,7 @@ paths:
       tags:
       - Service Profiles
       summary: Create Profile
-      description: Create Service Profile creates Equinix Fabric™ Service Profile.
+      description: Create Service Profile creates Equinix Fabric? Service Profile.
       operationId: createServiceProfile
       parameters: []
       requestBody:
@@ -2673,6 +2961,24 @@ paths:
               examples:
                 example:
                   $ref: '#/components/examples/400_UUID'
+        "403":
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/403'
+        "500":
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/500'
     delete:
       tags:
       - Service Tokens
@@ -2701,6 +3007,15 @@ paths:
               examples:
                 example:
                   $ref: '#/components/examples/400_UUID'
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/401'
     patch:
       tags:
       - Service Tokens
@@ -2756,6 +3071,15 @@ paths:
               examples:
                 example:
                   $ref: '#/components/examples/400_UUID'
+        "403":
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/403'
   /fabric/v4/serviceTokens:
     get:
       tags:
@@ -2793,11 +3117,20 @@ paths:
                   $ref: '#/components/examples/getServiceTokens'
                 tokenCrhExample:
                   $ref: '#/components/examples/getServiceTokens-CRH'
+        "403":
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/403'
     post:
       tags:
       - Service Tokens
       summary: Create Service Token
-      description: Create Service Tokens generates Equinix Fabric™ service tokens.
+      description: Create Service Tokens generates Equinix Fabric? service tokens.
         These tokens authorize users to access protected resources and services.
       operationId: createServiceToken
       requestBody:
@@ -2842,6 +3175,24 @@ paths:
               examples:
                 example:
                   $ref: '#/components/examples/400'
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/401'
+        "403":
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/403'
   /fabric/v4/serviceTokens/{serviceTokenId}/actions:
     post:
       tags:
@@ -3129,11 +3480,20 @@ paths:
               examples:
                 portExample:
                   $ref: '#/components/examples/ports'
+        "403":
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/403'
     post:
       tags:
       - Ports
       summary: Create Port
-      description: Creates Equinix Fabric™ Port.
+      description: Creates Equinix Fabric? Port.
       operationId: createPort
       parameters: []
       requestBody:
@@ -3194,7 +3554,7 @@ paths:
       tags:
       - Ports
       summary: Create Port
-      description: Create Port creates Equinix Fabric™ Port.<font color="red"> <sup
+      description: Create Port creates Equinix Fabric? Port.<font color="red"> <sup
         color='red'>Preview</sup></font>
       operationId: createBulkPort
       parameters: []
@@ -3314,6 +3674,24 @@ paths:
               examples:
                 example:
                   $ref: '#/components/examples/400'
+        "403":
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/403'
+        "500":
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/500'
     delete:
       tags:
       - Ports
@@ -3495,6 +3873,24 @@ paths:
                   $ref: '#/components/examples/400_invalid_input'
                 InvalidId:
                   $ref: '#/components/examples/400_Invalid_id'
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/401'
+        "403":
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/403'
         "404":
           description: Route Filter ID Not Found
           content:
@@ -3568,6 +3964,24 @@ paths:
                   $ref: '#/components/examples/400_invalid_input'
                 InvalidId:
                   $ref: '#/components/examples/400_Invalid_id'
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/401'
+        "403":
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/403'
         "404":
           description: Route Filter ID Not Found
           content:
@@ -3650,6 +4064,24 @@ paths:
                   $ref: '#/components/examples/400_invalid_direction'
                 TransientState:
                   $ref: '#/components/examples/400_transient_state'
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/401'
+        "403":
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/403'
         "404":
           description: Route Filter ID Not Found
           content:
@@ -3721,6 +4153,24 @@ paths:
               examples:
                 example:
                   $ref: '#/components/examples/400_transient_state'
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/401'
+        "403":
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/403'
         "404":
           description: Route Filter ID Not Found
           content:
@@ -3786,6 +4236,24 @@ paths:
               examples:
                 TransientState:
                   $ref: '#/components/examples/400_transient_state'
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/401'
+        "403":
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/403'
         "404":
           description: Route Filter ID Not Found
           content:
@@ -3850,6 +4318,24 @@ paths:
                   $ref: '#/components/examples/400_invalid_input'
                 InvalidId:
                   $ref: '#/components/examples/400_Invalid_id'
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/401'
+        "403":
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/403'
         "404":
           description: Route Filter ID Not Found
           content:
@@ -3911,6 +4397,24 @@ paths:
               examples:
                 example:
                   $ref: '#/components/examples/400_attached_connection'
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/401'
+        "403":
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/403'
         "404":
           description: Route Filter ID Not Found
           content:
@@ -3981,6 +4485,24 @@ paths:
               examples:
                 example:
                   $ref: '#/components/examples/400_invalid_operation'
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/401'
+        "403":
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/403'
         "404":
           description: Route Filter ID Not Found
           content:
@@ -4064,6 +4586,24 @@ paths:
                   $ref: '#/components/examples/400_invalid_input'
                 InvalidId:
                   $ref: '#/components/examples/400_Invalid_id'
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/401'
+        "403":
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/403'
         "404":
           description: Route Filter ID Not Found
           content:
@@ -4128,6 +4668,24 @@ paths:
                   $ref: '#/components/examples/400_invalid_input'
                 InvalidId:
                   $ref: '#/components/examples/400_Invalid_id'
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/401'
+        "403":
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/403'
         "404":
           description: Route Filter ID Not Found
           content:
@@ -4184,6 +4742,24 @@ paths:
                   $ref: '#/components/examples/400_invalid_input'
                 InvalidId:
                   $ref: '#/components/examples/400_Invalid_id'
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/401'
+        "403":
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/403'
         "404":
           description: Route Filter ID Not Found
           content:
@@ -4249,6 +4825,24 @@ paths:
                   $ref: '#/components/examples/400_invalid_input'
                 InvalidId:
                   $ref: '#/components/examples/400_Invalid_id'
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/401'
+        "403":
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/403'
         "404":
           description: Route Filter ID Not Found
           content:
@@ -4330,6 +4924,24 @@ paths:
               examples:
                 example:
                   $ref: '#/components/examples/404_invalid_id'
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/401'
+        "403":
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/403'
         "404":
           description: Route Filter Rule ID Not Found
           content:
@@ -4394,6 +5006,24 @@ paths:
                   $ref: '#/components/examples/400_bad_request'
                 InvalidId:
                   $ref: '#/components/examples/404_invalid_id'
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/401'
+        "403":
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/403'
         "404":
           description: Route Filter Rule ID Not Found
           content:
@@ -4465,6 +5095,24 @@ paths:
                   $ref: '#/components/examples/400_bad_request'
                 InvalidId:
                   $ref: '#/components/examples/404_invalid_id'
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/401'
+        "403":
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/403'
         "404":
           description: Route Filter ID Not Found
           content:
@@ -4549,6 +5197,24 @@ paths:
                   $ref: '#/components/examples/400_bad_request'
                 InvalidId:
                   $ref: '#/components/examples/404_invalid_id'
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/401'
+        "403":
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/403'
         "404":
           description: Route Filter ID Not Found
           content:
@@ -4620,6 +5286,24 @@ paths:
               examples:
                 example:
                   $ref: '#/components/examples/400_transient_filter'
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/401'
+        "403":
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/403'
         "404":
           description: Route Filter ID Not Found
           content:
@@ -4707,6 +5391,24 @@ paths:
                   $ref: '#/components/examples/400_bad_request'
                 InvalidId:
                   $ref: '#/components/examples/404_invalid_id'
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/401'
+        "403":
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/403'
         "404":
           description: Route Filter ID Not Found
           content:
@@ -4798,6 +5500,24 @@ paths:
                   $ref: '#/components/examples/400_invalid_input'
                 InvalidId:
                   $ref: '#/components/examples/400_Invalid_id'
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/401'
+        "403":
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/403'
         "404":
           description: Route Filter ID Not Found
           content:
@@ -4870,6 +5590,24 @@ paths:
                   $ref: '#/components/examples/400_invalid_input'
                 InvalidId:
                   $ref: '#/components/examples/400_Invalid_id'
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/401'
+        "403":
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/403'
         "404":
           description: Route Filter ID Not Found
           content:
@@ -4929,6 +5667,33 @@ paths:
               examples:
                 example:
                   $ref: '#/components/examples/404_invalid_id'
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/401'
+        "403":
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/403'
+        "404":
+          description: Not Found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/400'
         "415":
           description: Unsupported Media Type
           content:
@@ -4985,6 +5750,15 @@ paths:
               examples:
                 example:
                   $ref: '#/components/examples/400_invalid_package'
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/401'
         "403":
           description: Forbidden
           content:
@@ -5038,6 +5812,15 @@ paths:
               examples:
                 cloudRouterResponse:
                   $ref: '#/components/examples/CloudRouterResponseExample'
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/401'
         "403":
           description: Forbidden
           content:
@@ -5092,6 +5875,15 @@ paths:
               examples:
                 example:
                   $ref: '#/components/examples/400_invalid_state'
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/401'
         "403":
           description: Forbidden
           content:
@@ -5166,6 +5958,15 @@ paths:
               examples:
                 example:
                   $ref: '#/components/examples/400_invalid_operation'
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/401'
         "403":
           description: Forbidden
           content:
@@ -5245,6 +6046,15 @@ paths:
               examples:
                 example:
                   $ref: '#/components/examples/400_invalid_operation'
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/401'
         "403":
           description: Forbidden
           content:
@@ -5325,6 +6135,15 @@ paths:
               examples:
                 example:
                   $ref: '#/components/examples/400_invalid_operation'
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/401'
         "403":
           description: Forbidden
           content:
@@ -5412,6 +6231,15 @@ paths:
               examples:
                 example:
                   $ref: '#/components/examples/400_invalid_sorting'
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/401'
         "403":
           description: Forbidden
           content:
@@ -5538,6 +6366,15 @@ paths:
               examples:
                 example:
                   $ref: '#/components/examples/400_invalid_sorting'
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/401'
         "403":
           description: Forbidden
           content:
@@ -5601,6 +6438,15 @@ paths:
               examples:
                 Example:
                   $ref: '#/components/examples/ListFCRPackagesResponse'
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/401'
         "403":
           description: Forbidden
           content:
@@ -5661,6 +6507,15 @@ paths:
               examples:
                 example:
                   $ref: '#/components/examples/400_invalid_package'
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/401'
         "403":
           description: Forbidden
           content:
@@ -5821,6 +6676,24 @@ paths:
               examples:
                 example:
                   $ref: '#/components/examples/400'
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/401'
+        "403":
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/403'
         "415":
           description: Unsupported Media Type
           content:
@@ -5830,6 +6703,15 @@ paths:
               examples:
                 example:
                   $ref: '#/components/examples/415'
+        "500":
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/500'
   /fabric/v4/networks/{networkId}:
     get:
       tags:
@@ -5856,6 +6738,24 @@ paths:
               examples:
                 networkResponse:
                   $ref: '#/components/examples/NetworkGetResponseExample'
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/401'
+        "403":
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/403'
         "404":
           description: Not Found
           content:
@@ -5899,6 +6799,24 @@ paths:
               examples:
                 example:
                   $ref: '#/components/examples/400_invalid_state'
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/401'
+        "403":
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/403'
         "404":
           description: Not Found
           content:
@@ -5953,6 +6871,24 @@ paths:
               examples:
                 example:
                   $ref: '#/components/examples/400_invalid_state'
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/401'
+        "403":
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/403'
         "404":
           description: Not Found
           content:
@@ -6010,6 +6946,24 @@ paths:
               examples:
                 example:
                   $ref: '#/components/examples/400_invalid_sorting'
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/401'
+        "403":
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/403'
         "415":
           description: Unsupported Media Type
           content:
@@ -6055,6 +7009,24 @@ paths:
               examples:
                 example:
                   $ref: '#/components/examples/400_invalid_uuid'
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/401'
+        "403":
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/403'
         "415":
           description: Unsupported Media Type
           content:
@@ -6100,6 +7072,24 @@ paths:
               examples:
                 example:
                   $ref: '#/components/examples/400_invalid_uuid'
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/401'
+        "403":
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/403'
         "415":
           description: Unsupported Media Type
           content:
@@ -6153,6 +7143,24 @@ paths:
               examples:
                 example:
                   $ref: '#/components/examples/400_invalid_uuid'
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/401'
+        "403":
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/403'
         "404":
           description: Not Found
           content:
@@ -6283,6 +7291,42 @@ paths:
                   $ref: '#/components/examples/400-Invalid-Password'
                 ValidatePassword:
                   $ref: '#/components/examples/400-Validate-Password'
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/401'
+        "403":
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/403'
+        "415":
+          description: Unsupported Media Type
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/415'
+        "500":
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/500'
     delete:
       tags:
       - Precision Time
@@ -6308,6 +7352,42 @@ paths:
               examples:
                 NtpStandard:
                   $ref: '#/components/examples/ntpStandardCreateResponse'
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/401'
+        "403":
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/403'
+        "415":
+          description: Unsupported Media Type
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/415'
+        "500":
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/500'
     patch:
       tags:
       - Precision Time
@@ -6441,6 +7521,42 @@ paths:
                   $ref: '#/components/examples/400-Invalid-Password'
                 ValidatePassword:
                   $ref: '#/components/examples/400-Validate-Password'
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/401'
+        "403":
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/403'
+        "415":
+          description: Unsupported Media Type
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/415'
+        "500":
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/500'
   /fabric/v4/timeServices:
     post:
       tags:
@@ -6567,6 +7683,42 @@ paths:
                   $ref: '#/components/examples/400-Invalid-Password'
                 ValidatePassword:
                   $ref: '#/components/examples/400-Validate-Password'
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/401'
+        "403":
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/403'
+        "415":
+          description: Unsupported Media Type
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/415'
+        "500":
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/500'
   /fabric/v4/timeServices/{serviceId}/connections:
     get:
       tags:
@@ -6593,6 +7745,42 @@ paths:
               examples:
                 example:
                   $ref: '#/components/examples/serviceConnectionsResponse'
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/401'
+        "403":
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/403'
+        "415":
+          description: Unsupported Media Type
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/415'
+        "500":
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/500'
   /fabric/v4/timeServicePackages:
     get:
       tags:
@@ -6611,6 +7799,24 @@ paths:
               examples:
                 example:
                   $ref: '#/components/examples/servicePackagesResponse'
+        "415":
+          description: Unsupported Media Type
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/415'
+        "500":
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/500'
   /fabric/v4/timeServicePackages/{packageCode}:
     get:
       tags:
@@ -6643,6 +7849,24 @@ paths:
               examples:
                 example:
                   $ref: '#/components/examples/servicePackageResponse'
+        "415":
+          description: Unsupported Media Type
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/415'
+        "500":
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+              examples:
+                example:
+                  $ref: '#/components/examples/500'
 components:
   schemas:
     ConnectionPostRequest:
@@ -9526,7 +10750,7 @@ components:
       type: string
       description: Key or set of keys that organizes the search payload by property
         (such as createdDate or metroCode) or by direction. Ascending (ASC) is the
-        default value. The "‒" prefix indicates descending (DESC) order.
+        default value. The "?" prefix indicates descending (DESC) order.
       default: -bandwidthUtilization
       enum:
       - -bandwidthUtilization
@@ -10707,7 +11931,7 @@ components:
           description: List of Fabric Metros.
           items:
             $ref: '#/components/schemas/Metro'
-      description: "GET Metros retrieves all Equinix® Fabric™ metros, as well as latency\
+      description: "GET Metros retrieves all Equinix? Fabric? metros, as well as latency\
         \ data for each location.This performance data helps network planning engineers\
         \ and administrators make strategic decisions about port locations and traffic\
         \ routes."
@@ -10804,7 +12028,7 @@ components:
           description: List of supported geographic boundaries of a Fabric Metro.
           items:
             $ref: '#/components/schemas/GeoScopeType'
-      description: "GET Metros retrieves all Equinix® Fabric™ metros, as well as latency\
+      description: "GET Metros retrieves all Equinix? Fabric? metros, as well as latency\
         \ data for each location.This performance data helps network planning engineers\
         \ and administrators make strategic decisions about port locations and traffic\
         \ routes."

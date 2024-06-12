@@ -17,7 +17,7 @@ Method | HTTP request | Description
 > ServiceProfile CreateServiceProfile(ctx, body)
 Create Profile
 
-Create Service Profile creates Equinix Fabric™ Service Profile.
+Create Service Profile creates Equinix Fabric? Service Profile.
 
 ### Required Parameters
 
